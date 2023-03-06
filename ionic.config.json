@@ -1,0 +1,7 @@
+{
+  "name": "toolapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
