@@ -16,14 +16,12 @@
 
   <ion-list>
     <ion-item *ngFor="let university of universities">
-      <ion-icon name="school" slot="start"></ion-icon>
       <ion-label>
         <h2>{{ university.name }}</h2>
-        <p>Domains: {{ university.domains.join(', ') }}</p>
-        <p>Web pages:</p>
+        <p>Dominio: {{ university.domains.join(', ') }}</p>
+        <p>Sito web:</p>
         <ion-list>
           <ion-item *ngFor="let webPage of university.web_pages">
-            <ion-icon name="globe" slot="start"></ion-icon>
             <a href="{{ webPage }}">{{ webPage }}</a>
           </ion-item>
         </ion-list>
